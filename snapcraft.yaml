@@ -7,7 +7,7 @@ description: |
 
   Don't forget to connect plug "io-ports-control":
   sudo snap connect dell-bios-fan-control:io-ports-control
-license: GPL-2.0-or-later
+license: GPL-2.0+
 
 grade: devel
 confinement: strict
