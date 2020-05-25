@@ -12,6 +12,9 @@ license: GPL-2.0-or-later
 grade: devel
 confinement: strict
 
+architectures:
+  - build-on: amd64
+
 parts:
   dell-bios-fan-control:
     plugin: make
