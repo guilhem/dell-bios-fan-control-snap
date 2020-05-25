@@ -1,0 +1,27 @@
+name: dell-bios-fan-control
+base: core18
+version: "1.0"
+summary: Simple tool to manage SMBIOS fan on Dell laptop
+description: |
+  Allows to control the fans by bios or i8kctl utils.
+
+  Don't forget to connect plug "io-ports-control":
+  sudo snap connect dell-bios-fan-control:io-ports-control
+license: GPL-2.0-or-later
+
+grade: devel
+confinement: strict
+
+parts:
+  dell-bios-fan-control:
+    plugin: make
+    source: https://github.com/TomFreudenberg/dell-bios-fan-control.git
+    source-commit: a2c81a2918b15b97bdb1c6bf41233e4c2786d416
+    artifacts:
+      - dell-bios-fan-control
+
+apps:
+  dell-bios-fan-control:
+    command: dell-bios-fan-control
+    plugs:
+      - io-ports-control
