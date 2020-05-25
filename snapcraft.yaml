@@ -9,7 +9,7 @@ description: |
   sudo snap connect dell-bios-fan-control:io-ports-control
 license: GPL-2.0+
 
-grade: devel
+grade: stable
 confinement: strict
 
 architectures:
