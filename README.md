@@ -1,5 +1,7 @@
 # dell-bios-fan-control snap packaging
 
+[![dell-bios-fan-control](https://snapcraft.io//dell-bios-fan-control/badge.svg)](https://snapcraft.io/dell-bios-fan-control)
+
 ## Troubleshooting
 
 ```
